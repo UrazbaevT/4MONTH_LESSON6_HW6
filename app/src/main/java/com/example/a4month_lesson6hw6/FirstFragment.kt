@@ -52,14 +52,14 @@ class FirstFragment : Fragment() {
 
                         App.appDatabase.loveDao().insert(it)
 
-//                        Log.e("ololo", "initListener: $it" )
-//                        findNavController().navigate(
-//                            R.id.resultFragment, bundleOf(
-//                                "model" to it
-//                            )
-//                        )
+                        Log.e("ololo", "initListener: $it" )
+                        findNavController().navigate(
+                            R.id.resultFragment, bundleOf(
+                                "model" to it
+                            )
+                        )
                     })
-//                utils.showToast(requireContext())
+                utils.showToast(requireContext())
             }
         }
     }

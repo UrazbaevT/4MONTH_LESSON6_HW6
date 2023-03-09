@@ -74,12 +74,15 @@
         android:layout_marginVertical="30dp"
         android:text="Calculator"
         android:textSize="18sp"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        tools:ignore="HardcodedText" />
 
-    <Button
+
+    <ImageView
         android:id="@+id/btnHistory"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="History"/>
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_history" />
 
 </LinearLayout>

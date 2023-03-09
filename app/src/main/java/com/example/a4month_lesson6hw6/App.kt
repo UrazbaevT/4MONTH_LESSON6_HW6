@@ -6,7 +6,8 @@ import com.example.a4month_lesson6hw6.room.AppDatabase
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
-class App : Application() {
+class
+App : Application() {
 
     companion object {
         lateinit var appDatabase: AppDatabase

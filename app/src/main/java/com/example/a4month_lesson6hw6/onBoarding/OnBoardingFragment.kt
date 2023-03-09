@@ -34,6 +34,10 @@ class OnBoardingFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         adapter = OnBoardingAdapter(this::onClick)
         binding.viewPager.adapter = adapter
+
+        binding.indicator.setViewPager(binding.viewPager)
+        adapter.registerAdapterDataObserver(binding.indicator.adapterDataObserver)
+
         if (pref.isUserSeen()){
             findNavController().navigate(R.id.firstFragment)
         }
